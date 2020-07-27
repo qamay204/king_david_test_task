@@ -12,4 +12,5 @@ pip3 install oauth2client
 ```
 
 #  Summary
-This is test example with open api keys in .json files
+This is test example with open api keys in .json files.
+To follow the confirmation link was used Gmail API.
