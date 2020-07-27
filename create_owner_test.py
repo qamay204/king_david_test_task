@@ -101,11 +101,7 @@ class TestLoginForm(unittest.TestCase):
 
 if __name__ == '__main__':
     unittest.main()
-    # link = TestLoginForm.get_confirm_mail()
-    #
-    # clear_link = link.replace('=\\r\\n', '')
-    # clear_link = clear_link.replace('=\\r\\n', '')
-    # print(clear_link)
+
 
 
 
