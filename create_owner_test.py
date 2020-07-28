@@ -2,6 +2,7 @@ import unittest
 import time
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
 from googleapiclient.discovery import build
 from httplib2 import Http
 from oauth2client import file, client, tools
@@ -79,8 +80,9 @@ class TestLoginForm(unittest.TestCase):
         driver.find_element_by_id('email').send_keys(self.test_data['owner_credentials'][0])
         driver.find_element_by_id('start_balance_date').click()
         driver.find_element_by_xpath("//p[contains(., '31')]").click()
-        driver.find_element_by_id('start_balance_amount').clear()
+        driver.find_element_by_id('start_balance_amount').send_keys(Keys.BACKSPACE)
         driver.find_element_by_id('start_balance_amount').send_keys(5000)
+        driver.find_element_by_id('asdasdasd')
         driver.find_element_by_id('currency_id').click()
         driver.find_element_by_xpath('//li[contains(., "EUR")]').click()
         driver.find_element_by_id('is_active').click()
