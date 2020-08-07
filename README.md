@@ -12,5 +12,6 @@ pip3 install oauth2client
 ```
 
 #  Summary
-To run this test you must register you own Gmail API
+To run this test you must register you own Gmail API and 
+add credentials.json file into the root of the project.
 
